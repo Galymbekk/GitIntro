@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+
+        body{
+             height: 2000px;
+        }
+        .box{
+            border: 2px solid red;
+            width: 300px;
+            height: 300px;
+            position: relative;
+        }
+        .text{
+            position: absolute;
+            right: -30px;
+            bottom: -30px;
+            background-color: blue;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            /* right: 0; */
+        }
+        .lorem{
+            position: relative;
+            z-index: 1;
+        }
+        .box-2{
+            border: 2px solid green;
+            width: 400px;
+            height: 400px;
+        }
+
+        .green{
+            width: 300px;
+            height: 300px;
+            border: 2px solid yellow;
+            background-color: green;
+            position: relative;
+        }
+        .red{
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            width: 300px;
+            height: 300px;
+            border: 2px solid blue;
+            background-color: red;
+        }
+        .title{
+            text-align: center;
+            background-color: black;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            z-index: 2;
+        }
+        .bakzhan-box{
+            margin-top: 80px;
+            font-size: 35px;
+            background-color: chocolate;
+            width: 500px;
+            border-radius: 20px;
+            text-align: center;
+            position: sticky;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+   <!-- <div class="box">
+        <p class="text">Beibarys</p>
+        <em>Курсив</em>
+   </div>
+   <div class="box-2">
+
+   </div> -->
+   
+    <h1 class="title">FIXED</h1>
+
+   <div class="green">
+        <div class="red">
+
+        </div>
+   </div>
+   <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt commodi nulla saepe, aspernatur voluptates tenetur ipsa est aut et suscipit.</p>
+   <div class="bakzhan-box">
+        BAKZHAN
+   </div>
+</body>
+</html>

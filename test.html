@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body style="background-color: chocolate;">  
+    <h2>Бургер тапсырыс беру формасы</h2>
+    <form action="">
+        <label for="esim">Есіміңіз:</label><br>
+        <input type="text" name="esim" pattern="[A-Za-z0-9]{5,15}" placeholder="Есіміңізді жазыңыз" required><br><br>
+        
+        <label for="telephone">Номеріңіз</label><br>
+        <input class="number" type="tel" pattern="[0-9]{11}" placeholder="8(7..)......." name="telephone"><br><br>
+        
+        <label for="burger">Бургерді тандаңыз:</label><br>
+        <select name="burger">
+            <option value="">...</option>
+            <option value="">Классикалық бургер</option>
+            <option value="">Чизбургер</option>
+            <option value="">Гамбургер</option>
+            <option value="">Вегетариандық бургер</option>
+        </select><br><br>
+
+        <h3>Соус тандаңыз</h3>
+        <input type="radio" value="sirniy" name="sous">
+        <label for="sirniy" class="sous">Сырный</label><br>
+        <input type="radio" value="ketchup" name="sous"> 
+        <label for="ketchup" class="sous">Кетчуп</label><br>
+        <input type="radio" value="barbecue" name="sous">
+        <label for="barbecue" class="sous">Барбекью</label><br><br>
+
+        <button class="btn">Заказать</button>
+    </form> 
+</body>
+</html>

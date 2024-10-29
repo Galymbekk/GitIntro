@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+}
+
+.logo {
+    width: 9%;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    column-gap: 40px;
+    font-size: 21px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    background-color: #808080;
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer; /* Add cursor to indicate clickable */
+}
+
+.burger-list {
+    display: none;
+    background-color: white; /* Add background for better visibility */
+    width: 150px; /* Define a width for the burger list */
+}
+
+@media (max-width:1000px) {
+    ul {
+        display: none;
+    }
+    
+    .burger-menu {
+        display: block;
+        width: 50px;
+    }
+    
+    nav {
+        position: relative;
+    }
+    
+    .burger-menu:hover .burger-list {
+        position: absolute;
+        top: 80px;
+        right: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* Optional gap for items */
+        padding: 10px;
+        border: 1px solid black; /* Optional border for visibility */
+    }
+    .logo {
+        width: 13%;
+    }
+}
